@@ -7,7 +7,6 @@ interface GameProps {
 }
 
 const GameCard = ({ game }: GameProps) => {
-  console.log(game.background_image);
   return (
     <Card borderRadius={10} overflow="hidden">
       <Image src={game.background_image} />
