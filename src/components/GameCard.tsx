@@ -10,7 +10,7 @@ interface GameProps {
 
 const GameCard = ({ game }: GameProps) => {
   return (
-    <Card>
+    <Card height='100%'>
       <Image src={getCroppedImageUrl(game.background_image)} />
       <CardBody>
         <Heading fontSize="2xl">{game.name}</Heading>
