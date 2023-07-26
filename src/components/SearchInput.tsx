@@ -6,7 +6,7 @@ interface Props {
   onSearch: (searchText: string) => void;
 }
 
-const SearchInput = ({ onSearch }:Props) => {
+const SearchInput = ({ onSearch }: Props) => {
   const ref = useRef<HTMLInputElement>(null);
 
   return (
@@ -23,6 +23,7 @@ const SearchInput = ({ onSearch }:Props) => {
           borderRadius={20}
           placeholder="Search games..."
           variant="filled"
+          id="searchInput"
         />
       </InputGroup>
     </form>
