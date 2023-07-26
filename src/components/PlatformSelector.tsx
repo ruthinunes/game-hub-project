@@ -11,6 +11,7 @@ interface Props {
 const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
   const { data, error } = usePlatforms();
 
+  // if statement for call the genres by the server:
   if (error) return null;
 
   return (
