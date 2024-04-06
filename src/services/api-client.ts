@@ -8,6 +8,7 @@ const apiClient = axios.create({
 });
 
 apiClient.interceptors.request.use((config: AxiosRequestConfig) => {
+  config.headers = config.headers || {};
   config.headers["Access-Control-Allow-Origin"] =
     "https://game-hub-project-2023-kezpf8429-ruthinunes.vercel.app";
   return config;
